@@ -2,12 +2,12 @@ import { FC } from "react";
 import styled from "styled-components";
 import { PokeScreen } from "./Screen";
 
-type PokeStats = {
+type PokemonStats = {
   title: string;
   stats: Array<string>;
 };
 
-export const Stats: FC<PokeStats> = ({ title, stats }) => {
+export const Stats: FC<PokemonStats> = ({ title, stats }) => {
   return (
     <Wrapper>
       <Title>{title}</Title>
@@ -22,7 +22,6 @@ export const Stats: FC<PokeStats> = ({ title, stats }) => {
 
 export const Wrapper = styled(PokeScreen)`
   padding: 2rem;
-
 `;
 
 export const PokeStats = styled.div`
